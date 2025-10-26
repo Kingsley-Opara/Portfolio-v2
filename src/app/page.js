@@ -5,6 +5,7 @@ import MobileNavbar from "./components/mobileNavbar";
 import Hero from "./components/hero";
 import SkillMarquee from "./components/skills";
 import Services from "./components/Services";
+import EmblaSlider from "./components/projects";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Hero/>
       <SkillMarquee/>
       <Services/>
-
+      <EmblaSlider/>
 
 
     </main>

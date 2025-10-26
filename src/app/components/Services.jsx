@@ -12,10 +12,11 @@ function Services() {
             </div>
             <div className='text-xl'>Specialized In</div>
         </div>
-        <div className='mt-10  grid grid-cols-3 gap-5 mx-auto place-items-center'>
+        <div className='mt-10  grid grid-cols-3 gap-5 mx-auto 
+        place-items-center max-md:grid-cols-1'>
           {services.map((service) =>{
             return(
-              <div className='bg-white shadow-lg text-black dark:bg-gray-950 space-y-5 px-2
+              <div className='bg-white shadow-lg text-black dark:bg-gray-900 space-y-5 px-2
               dark:text-white flex flex-col w-80 h-60 self-center text-center align-middle font-mono' key={service.id}>
 
                 <div className='self-center flex text-center mt-4 rounded-full bg-purple-300 p-3'>

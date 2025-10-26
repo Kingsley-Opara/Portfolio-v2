@@ -68,3 +68,56 @@ export const services = [
         text: "Design, build and maintain high performance, cross-platform mobile application using flutter framework to deliver seamless user experience across Android and IOS platform"
     },
 ]
+
+export const projects = [
+    {
+        id: 1,
+        image: '/image/techrity.jpeg',
+        title: "Techrity",
+        link: "https://mentlyfetest.netlify.app/",
+        description: `
+        Techrity is a dashboard that helps mentors to  easily assign tasks to their
+        students, something more like a project management dashboard. Offers varieties
+        of options including light/dark mode features. Tech stack includes: 
+        Next.js and TailwindCSS
+        `,
+        projectType: "Frontend"
+    },
+    {
+        id: 2,
+        image: '/image/fintech.jpeg',
+        title: "Fintech Savings and Investment App",
+        link: "https://fintechsavings.netlify.app/dashboard",
+        description: `
+        This is a highly responsive fintech savings and investment dashboard that offers
+        smooth user flow and follows modern practices of building frontend applications.
+        Ofers varities of features including: Next.js and Tailwind CSS.
+        `,
+        projectType: "Frontend"
+
+    },
+    {
+        id: 3,
+        image: '/image/jobpilot.jpeg',
+        title: "Jobpilot",
+        link: "https://job-listing-application.netlify.app/",
+        description: `
+        Jobpilot is a mobile responsive and job listing application that
+        allows users to search, filter and also apply for jobs. It offers
+        a smooth user flow and well paginated data. Tech Stack includes:
+        Next.js, Tailwind CSS and Remotive API. 
+        `,
+        projectType: "Frontend"
+    },
+    {
+        id: 4,
+        image: '/image/manage.png',
+        title: "Manage",
+        link: "https://main--kingsley-tailwind-landingpage.netlify.app/",
+        description: `
+        Manage is a basic responsive landing page. Tech stack includes: HTML5,
+        TailwindCSS and Javascript. 
+        `,
+        projectType: "Frontend"
+    }
+]

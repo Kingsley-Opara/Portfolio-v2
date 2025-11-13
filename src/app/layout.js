@@ -26,7 +26,7 @@ const monda = Montez({
 
 export const metadata = {
   title: "Kingsley Udochukwu",
-  description: "Highly detailed portfolio of Kingsley Udochukwu",
+  description: "A highly detailed portfolio of Kingsley Udochukwu",
 };
 
 export default function RootLayout({ children }) {

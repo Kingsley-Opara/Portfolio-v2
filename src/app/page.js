@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import SkillMarquee from "./components/skills";
 import Services from "./components/Services";
 import EmblaSlider from "./components/projects";
+import Community from "./components/community";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <SkillMarquee/>
       <Services/>
       <EmblaSlider/>
+      <Community/>
 
 
     </main>

@@ -17,7 +17,7 @@ export default function EmblaSlider() {
   }, [emblaApi]);
 
   return (
-    <div className="relative mt-30">
+    <div className="relative mt-30" id="projects">
       <div className="font-mono flex space-x-3 pl-12">
         <hr className="w-10 text-black  dark:text-white text-bold mt-3"/>
         <div className="text-gray-400 text-lg">

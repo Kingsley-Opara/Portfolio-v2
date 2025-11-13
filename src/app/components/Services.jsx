@@ -4,7 +4,7 @@ import { GoDash } from "react-icons/go";
 
 function Services() {
   return (
-    <div className='mt-20 p-5'>
+    <div className='mt-20 p-5' id='service'>
         <div className='font-mono text-center space-y-4'>
             <div className='text-gray-300 self-center place-content-center flex justify-center align-middle space-x-2'>
                 <hr className='w-10 self-center'/>

@@ -121,3 +121,27 @@ export const projects = [
         projectType: "Frontend"
     }
 ]
+
+export const navbarList = [
+    {
+        id: 1,
+        name: "Services",
+        link: "services"
+    },
+
+    {
+        id: 2,
+        name: "Portfolio",
+        link: "projects"
+    },
+    {
+        id: 3,
+        name: "Blog",
+        link: "blog"
+    },
+    {
+        id: 4,
+        name: "Community",
+        link: "community"
+    },
+]

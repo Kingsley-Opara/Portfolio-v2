@@ -6,17 +6,50 @@ import { IoIosMoon } from "react-icons/io";
 import { CiLight } from "react-icons/ci";
 import { MdLaptopChromebook } from "react-icons/md";
 import { useTheme } from 'next-themes';
+import { navbarList } from '../lib/utilis';
 
 function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false)
     const { theme, setTheme, systemTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
+    const [activeSession, setActiveSession] = useState("home")
 
-    useEffect(() => setMounted(true), []);
+    const handleScroll = () =>{
+        const scrollPostion = window.scrollY + window.innerHeight / 3
+
+        let current = "home"
+
+        for (const section of navbarList){
+            const sec = document.getElementById(section.id)
+
+            if (sec && sec.offsetTop <= scrollPostion){
+                console.log("hi")
+                current = section.id
+                
+                
+            }
+            setActiveSession(current)
+            
+            
+        }
+        
+        
+
+        
+    }
+
+    useEffect(() => {
+        setMounted(true)
+        window.addEventListener("scroll", handleScroll)
+        console.log(activeSession)
+        return () => window.removeEventListener("scroll", handleScroll)
+        
+        
+    }, []);
     if (!mounted) return null;
   return (
     <div className='my-4'>
-        <nav className='flex place-content-between '>
+        <nav className='flex place-content-between'>
             <div className='flex space-x-2 pl-6 mt-2'>
                 <div className='font-sansita text-lg text-blue-600'>
                     Kingsley
@@ -26,21 +59,20 @@ function Navbar() {
                     Udochukwu
                 </div>
             </div>
-            <div className='mt-3 font-sansita max-md:hidden text-sm'>
-                <li className='flex space-x-5'>
-                    <ul className='cursor-pointer hover:text-blue-400'>
-                        Services
-                    </ul>
-                    <ul className='cursor-pointer hover:text-blue-400'>
-                        Portfolio
-                    </ul>
-                    <ul className='cursor-pointer hover:text-blue-400'>
-                        Blog
-                    </ul>
-                    <ul className='cursor-pointer hover:text-blue-400'>
-                        Experenice
-                    </ul>
-                </li>
+            <div className='mt-3 font-sansita max-md:hidden text-lg'>
+                <ul className='flex space-x-5'>
+                    {navbarList.map((item)=>{
+                        return(
+                            <li className={`cursor-pointer 
+                            hover:text-blue-400
+                            ${activeSession === item.id ? "text-blue-400": "text-white"} `} 
+                            key={item.id}>
+                                <a href={`#${item.link}`}>{item.name}</a>
+                            </li>
+                        )
+                    })}
+                </ul>
+
             </div>
             <div className='flex space-x-10 mr-3 max-md:space-x-5'>
                 <div className='p-1 mt-3 rounded-full border-2 
@@ -79,9 +111,9 @@ function Navbar() {
                 
                 <div className='mt-3 max-md:mt-2'>
                     <a href="/resume.pdf" download={"Opara Resume"} 
-                    className=' text-lg cursor-pointer font-mono max-md:text-sm'>
+                    className=' text-sm cursor-pointer font-mono max-md:text-sm'>
                         <button className='px-2 border-2 border-black dark:border-white 
-                        rounded-lg lg:text-xs py-1 cursor-pointer'>
+                        rounded-xl lg:text-xs py-1 cursor-pointer p-6 h-9'>
                             Resume
                         </button>
 

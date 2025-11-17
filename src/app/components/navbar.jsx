@@ -65,7 +65,7 @@ function Navbar() {
                         return(
                             <li className={`cursor-pointer 
                             hover:text-blue-400
-                            ${activeSession === item.id ? "text-blue-400": "text-white"} `} 
+                            ${activeSession === item.id ? "text-blue-400": ""} `} 
                             key={item.id}>
                                 <a href={`#${item.link}`}>{item.name}</a>
                             </li>

@@ -10,7 +10,7 @@ function Community() {
             <span><hr className='w-10'/></span>
             <h4 className='font-mono text-center text-xl'>Community</h4>
         </div>
-        <div className='mt-10 px-15 flex flex-col space-y-8 max-md:place-content-center'>
+        <div className='mt-10 px-15 flex flex-col space-y-8 max-md:place-content-center max-md:self-center max-md:justify-center max-md:items-center'>
         {community.map((item) =>{
             return(
                 <div className={`flex space-x-6 

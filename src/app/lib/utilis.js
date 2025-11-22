@@ -137,11 +137,37 @@ export const navbarList = [
     {
         id: 3,
         name: "Blog",
-        link: "blog"
+        link: "#blog"
     },
     {
         id: 4,
         name: "Community",
-        link: "community"
+        link: "/community"
     },
+]
+
+export const community = [
+    {
+        id: 1,
+        role: "Speaker",
+        community: "GDG",
+        date: "November 2023",
+        event: "DevFest Abakaliki 2023",
+        image: "/image/devfest.jpeg",
+        topic: "Understanding Kubernetes Architecture", 
+        about: true
+        
+    },
+
+    {
+        id: 2,
+        role: "Speaker",
+        community: "GDG",
+        date: "November 2025",
+        event: "Google I/O Extended After-party Aba",
+        image: "/image/googleIOEX.jpeg",
+        topic: "Optimising Gemini with Domain Specific Data", 
+        about: true
+        
+    }
 ]

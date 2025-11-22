@@ -7,6 +7,7 @@ import { CiLight } from "react-icons/ci";
 import { MdLaptopChromebook } from "react-icons/md";
 import { useTheme } from 'next-themes';
 import { navbarList } from '../lib/utilis';
+import Link from 'next/link';
 
 function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false)
@@ -67,7 +68,7 @@ function Navbar() {
                             hover:text-blue-400
                             ${activeSession === item.id ? "text-blue-400": ""} `} 
                             key={item.id}>
-                                <a href={`#${item.link}`}>{item.name}</a>
+                                <Link href={`${item.link}`}>{item.name}</Link>
                             </li>
                         )
                     })}

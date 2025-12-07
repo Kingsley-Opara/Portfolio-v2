@@ -51,15 +51,17 @@ function Navbar() {
   return (
     <div className='my-4'>
         <nav className='flex place-content-between'>
-            <div className='flex space-x-2 pl-6 mt-2'>
-                <div className='font-sansita text-lg text-blue-600'>
-                    Kingsley
+            <Link href={'/'}>
+                <div className='flex space-x-2 pl-6 mt-2'>
+                    <div className='font-sansita text-lg text-blue-600'>
+                        Kingsley
 
+                    </div>
+                    <div className='font-monda text-lg font-bold pt-1'>
+                        Udochukwu
+                    </div>
                 </div>
-                <div className='font-monda text-lg font-bold pt-1'>
-                    Udochukwu
-                </div>
-            </div>
+            </Link>
             <div className='mt-3 font-sansita max-md:hidden text-lg'>
                 <ul className='flex space-x-5'>
                     {navbarList.map((item)=>{

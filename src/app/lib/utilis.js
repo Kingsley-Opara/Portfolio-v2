@@ -169,5 +169,17 @@ export const community = [
         topic: "Optimising Gemini with Domain Specific Data", 
         about: true
         
+    },
+
+    {
+        id: 3,
+        role: "Speaker",
+        community: "GDG",
+        date: "November 2024",
+        event: "Build with AI",
+        image: "/image/buildWithAI.jpeg",
+        topic: "Understanding How LLM's Work and Gemini API Structure", 
+        about: true
+        
     }
 ]

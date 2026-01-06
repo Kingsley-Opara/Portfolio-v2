@@ -119,6 +119,21 @@ export const projects = [
         TailwindCSS and Javascript. 
         `,
         projectType: "Frontend"
+    },
+    {
+        id: 5,
+        image: "image/carol.png",
+        title: "Carol of Nine Lessons",
+        link: "https://fecamds-aefunai.netlify.app/",
+        description: `
+        A Full Stack event registration web application for  FECAMDS AE-FUNAI  christmas carol . 
+        Highly responsive and built using modern technologies such as: Next.js, Django, Django Ninja , 
+        PayStack, Neon Serverless Database and TailwindCSS.  This event registration application is 
+        integrated with paystack and accepts real time payment. 
+        Offers varieties of options including light/dark mode using Next-themes and smooth user flow.
+        `,
+        projectType: "Full-Stack"
+
     }
 ]
 

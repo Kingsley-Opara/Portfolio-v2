@@ -122,7 +122,7 @@ export const projects = [
     },
     {
         id: 5,
-        image: "image/carol.png",
+        image: "/image/carol.png",
         title: "Carol of Nine Lessons",
         link: "https://fecamds-aefunai.netlify.app/",
         description: `

@@ -46,7 +46,9 @@ export default function EmblaSlider() {
                   words= 
                   {project.projectType === "Frontend" ? 
                     ["Frontend", "UI Design", 'Next.js'] : 
-                    ["Backend", "API", "Python"]}
+                    ["Backend", "API", "Python"] |
+                    project.projectType === "Full-Stack" && ["Full-Stack"]
+                  }
                   loop
                   cursor
                   cursorStyle="_"

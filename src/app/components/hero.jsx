@@ -30,13 +30,14 @@ function Hero() {
                 <div className='mt-5'>
                     <ul className='flex space-x-6 max-md:mx-auto max-md:self-center max-md:place-content-center'>
                         <li className='cursor-pointer'>
-                            <FaGithub/>
+                            <a href="https://github.com/kingsley-udochukwu" target="_blank"><FaGithub/></a>
                         </li>
                         <li className='cursor-pointer'>
-                            <FaXTwitter/>
+                            <a href="https://x.com/kings_codes" target="_blank"><FaXTwitter/></a>
+                            
                         </li>
                         <li className='cursor-pointer'>
-                            <FaLinkedinIn/>
+                            <a href="https://linkedin.com/in/kingsley-udochukwu" target="_blank"><FaLinkedinIn/></a>
                         </li>
                     </ul>
 

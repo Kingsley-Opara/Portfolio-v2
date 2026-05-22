@@ -134,6 +134,21 @@ export const projects = [
         `,
         projectType: "Full-Stack"
 
+    },
+    {
+        id: 6,
+        image: "/image/ai-voice.png",
+        title: "AI Voice Agent",
+        link: "https://ai-voice-agent-app.netlify.app/",
+        description: `
+            A real-time voice AI assistant built 
+            with LiveKit Agents and Google Gemini's native audio model, enabling 
+            seamless browser-based voice conversations via WebRTC. Deployed with a 
+            Next.js frontend on Netlify and a Python backend on Render, 
+            integrated through LiveKit Cloud for real-time audio routing.
+        `,
+        projectType: "Full-Stack"
+
     }
 ]
 

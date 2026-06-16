@@ -195,7 +195,7 @@ export const community = [
         community: "GDG",
         date: "November 2025",
         event: "Google I/O Extended After-party Aba",
-        image: "/image/googleIOEX.jpeg",
+        image: "/image/googleIOEx.jpeg",
         topic: "Optimising Gemini with Domain Specific Data", 
         about: true
         

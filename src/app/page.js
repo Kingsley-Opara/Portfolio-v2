@@ -7,6 +7,7 @@ import SkillMarquee from "./components/skills";
 import Services from "./components/Services";
 import EmblaSlider from "./components/projects";
 import Community from "./components/community";
+import Blog from "./components/Blog";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Services/>
       <EmblaSlider/>
       <Community/>
+      <Blog/>
 
 
     </main>
